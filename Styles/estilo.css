@@ -1,0 +1,144 @@
+@font-face {
+    font-family: Krona;
+    src: url(../Fontes/KronaOne-Regular.ttf);
+}
+@font-face {
+    font-family: Mont;
+    src: url(../Fontes/Montserrat-Regular.ttf);
+}
+
+:root{
+    --collor-principal: rgb(0, 0, 0);
+    --collor-secondary: rgb(255, 255, 255);
+    --collor-terciary: #C0C317;
+}
+
+*   {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body    {
+    box-sizing: border-box;
+    background-color: var(--collor-principal);
+    color: var(--collor-secondary);
+}
+
+strong{
+    color: var(--collor-terciary);
+}
+
+.menu{
+    padding: 2% 0% 0% 15%;
+}
+
+.menu_links{
+    display: flex;
+    gap: 5rem;
+}
+
+.link   {
+    font-family: Mont;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--collor-terciary);
+
+}
+
+.container{
+    padding: 5% 15% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.container_content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.container_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    
+}
+
+.container_content_title{
+    font-size: 2.25rem;
+    font-family: Krona;
+}
+
+.container_buttons_header{
+    font-family: Krona;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container_content_paragraph{
+    font-size: 1.5rem;
+    font-family: Mont;
+    line-height: 2.25rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    border: 2px solid var(--collor-terciary);
+    border-radius: 8px;
+    width: 40%;
+    padding: 1.33rem;
+    font-family: Mont;
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--collor-secondary);
+    transition-duration: 0.6s;
+}
+
+.button:hover{
+    background-color: #272727;
+}
+
+.imagem {
+    width: 50%;
+
+}
+
+.rodape {
+    padding: 1.5rem;
+    color: var(--collor-principal);
+    background-color: var(--collor-terciary);
+    text-align: center;
+    font-family: Mont;
+    font-size: 1.5rem;
+    font-weight: 400;
+
+}
+
+@media (max-width: 1200px){
+    .menu{
+        padding: 10%;
+    }
+    .menu_links{
+        justify-content: center;
+    }
+    .container{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container_content{
+        width: auto;
+    }
+}
+    
+
+
+
+
